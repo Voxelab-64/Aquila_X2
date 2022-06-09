@@ -3378,16 +3378,16 @@ inline void Draw_Max_Accel_Menu() {
 
   if (HMI_flag.language_flag) {
       
-    DWIN_Frame_AreaCopy(1,0,80,114,100,121,5);
-    DWIN_Frame_AreaCopy(1, 0, 402, 114, 422, LBLX, MBASE(1));     // max...    // max...
-    DWIN_Draw_String(false,true,font8x16,Black,White,LBLX+116, MBASE(1)+5,"X");
-    DWIN_Frame_AreaCopy(1, 0, 402, 114, 422, LBLX, MBASE(2));     // max...     // max...
-    DWIN_Draw_String(false,true,font8x16,Black,White,LBLX+116, MBASE(2)+5,"Y");
-    DWIN_Frame_AreaCopy(1, 0, 402, 114, 422, LBLX, MBASE(3));     // max...
-    DWIN_Draw_String(false,true,font8x16,Black,White,LBLX+116, MBASE(3)+5,"Z");
-    DWIN_Frame_AreaCopy(1, 0, 402, 114, 422, LBLX, MBASE(4));     // max...
-    DWIN_Draw_String(false,true,font8x16,Black,White,LBLX+116, MBASE(4)+5,"E");
-    DWIN_Frame_AreaCopy(1, 0, 382, 112, 402, LBLX, MBASE(5));     // save configuration
+  DWIN_Frame_AreaCopy(1,173,40,250,60,121,5);
+    DWIN_Frame_AreaCopy(1, 63, 300, 132, 320, LBLX, MBASE(1));     // max...    // max...
+    DWIN_Draw_String(false,true,font8x16,Black,White,LBLX+70, MBASE(1)+3,"X");
+    DWIN_Frame_AreaCopy(1, 63, 300, 132, 320, LBLX, MBASE(2));     // max...     // max...
+    DWIN_Draw_String(false,true,font8x16,Black,White,LBLX+70, MBASE(2)+3,"Y");
+    DWIN_Frame_AreaCopy(1, 63, 300, 132, 320, LBLX, MBASE(3));     // max...
+    DWIN_Draw_String(false,true,font8x16,Black,White,LBLX+70, MBASE(3)+3,"Z");
+    DWIN_Frame_AreaCopy(1, 63, 300, 132, 320, LBLX, MBASE(4));     // max...
+    DWIN_Draw_String(false,true,font8x16,Black,White,LBLX+70, MBASE(4)+3,"E");
+  DWIN_Frame_AreaCopy(1, 170, 260, 226, 280, LBLX, MBASE(5));     // save configuration
   }
   else {
     #ifdef USE_STRING_HEADINGS
